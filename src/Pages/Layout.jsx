@@ -39,6 +39,7 @@ function Layout() {
         <nav className='text-xl text-white flex items-center justify-between mt-4 '>
           <Link to='/' className='hover:bg-neutral-500 hover:p-2 hover:rounded-md'>Home</Link>
           {user ? (<div className=' space-x-4 flex'><p>Welcome back {user.name}</p>
+           <Link to='/create' className='hover:bg-neutral-500 hover:p-2 hover:rounded-md'>New Post</Link>
             <form onSubmit={handleLogout}>
               <button className='hover:bg-neutral-500 hover:p-2 hover:rounded-md'>Logout</button>
             </form>

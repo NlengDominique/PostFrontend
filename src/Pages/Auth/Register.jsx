@@ -17,7 +17,7 @@ function Register() {
 
   const [errors, setErrors] = useState({})
 
-  const {token,setToken} = useContext(AppContext)
+  const {setToken} = useContext(AppContext)
 
   const handleRegister = async (e) => {
 
